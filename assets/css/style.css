@@ -1,9 +1,9 @@
 body{
-    font-family: arial,sans-serif;
     margin: 20px;
+    font-family: arial,sans-serif;
     padding: 0;
     line-height: 1.0;
-    background-color: rgb(255, 71, 65);
+    background-color: rgb(253, 98, 93);
 }
 
 header{
@@ -30,7 +30,7 @@ main {
     text-align: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px;
+    margin: 8px;
 }
 main h1 {
     text-align: center;
@@ -38,10 +38,14 @@ main h1 {
 section{
     flex: 5;
     margin-bottom: 30px;
+    margin: 20px;
+    background-color: rgb(236, 154, 122);
 }
 .container{
+    
     width: 400px;
     border: 2px solid rgb(255, 127, 238);
+    background-color: rgb(245, 211, 99);
 }
 
 .logo{
@@ -60,4 +64,5 @@ h3{
 aside {
     flex: 1; 
     padding: 20px ;
+    background-color: rgb(240, 186, 143);
 }
