@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CONTACTO</h1>
+    </header>
+
+
+    <div class="container"><img src="assets/images/bandera.jpg"alt="logo de la empresa" class="logo"</div>
+    <nav>
+        <ul>
+            <li><a href="Index.html">CULTURA</a></li>
+            <li><a href="/Museos.html">MUSEOS</a></li>
+            
+        </ul>
+    </nav>
+
+    <menu>
+        <h2>INFO PERSONAL</h2>
+    <ul>
+    <form id="contact-form">
+     <li><label for="apellido">apellido:</label></li>
+     <input type="text" id="apellido" name="apellido" required>
+
+     <li><label for="nombre">Nombre:</label></li>
+     <input type="text" id="nombre" name="nombre" required>
+
+     <li><label for="dni">DNI:</label></li>
+     <input type="text" id="DNI" name="DNI" required>
+
+     <li><label for="idioma">idioma</label></li>
+     <select id="idioma" name="idioma" multiple>
+        <option value="español">español</option>
+        <option value="ingles">ingles</option>
+        <option value="frances">frances</option>
+        <option value="otro">otro</option>
+        
+     </select>
+     <li><button type="submit" onclick="EnviarFormulario()">Enviar</button></li>
+
+    </ul>
+
+    </form>
+    </menu>
+    <script>
+        function EnviarFormulario(){
+
+            event.preventDefault();
+         var apellido =document.getElementById("apellido").value;
+         var nombre =document.getElementById("nombre").value
+         var DNI =document.getElementById("DNI").value
+         var idioma=document.getElementById("idioma").value
+       
+         console.log("nombre: ",nombre);
+         console.log("apellido: ",apellido);
+         console.log("DNI: ",DNI);
+         console.log("idioma: ",idioma);
+
+         alert("NOMBRE: "+nombre+ " APELLIDO: "+apellido+" DNI: "+DNI+" IDIOMA: "+idioma);
+        }
+    </script>
+</body>
+</html>
